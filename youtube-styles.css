@@ -1,0 +1,19 @@
+/* youtube-styles.css */
+/* CSS will be dynamically toggled by JavaScript */
+body.block-youtube-shorts [is-shorts],
+body.block-youtube-shorts ytd-rich-shelf-renderer[is-shorts],
+body.block-youtube-shorts ytd-reel-shelf-renderer,
+body.block-youtube-shorts a[title="Shorts"],
+body.block-youtube-shorts ytd-guide-entry-renderer a[href="/shorts"],
+body.block-youtube-shorts yt-tab-shape[tab-title="Shorts"],
+body.block-youtube-shorts ytd-mini-guide-entry-renderer a[href="/shorts"] {
+  display: none !important;
+}
+
+/* Hide video containers that contain Shorts links */
+body.block-youtube-shorts ytd-video-renderer:has(a[href*="/shorts/"]),
+body.block-youtube-shorts ytd-rich-item-renderer:has(a[href*="/shorts/"]),
+body.block-youtube-shorts ytd-compact-video-renderer:has(a[href*="/shorts/"]),
+body.block-youtube-shorts ytd-grid-video-renderer:has(a[href*="/shorts/"]) {
+  display: none !important;
+}

@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "Shorts & Stories Blocker",
+  "version": "1.0",
+  "description": "Blocks YouTube Shorts and Facebook Stories from appearing",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/*",
+    "*://*.facebook.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.youtube.com/*"
+      ],
+      "js": [
+        "youtube-blocker.js"
+      ],
+      "css": [
+        "youtube-styles.css"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "*://*.facebook.com/*"
+      ],
+      "js": [
+        "facebook-blocker.js"
+      ],
+      "css": [
+        "facebook-styles.css"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
+}

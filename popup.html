@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+    h2 {
+      margin-top: 0;
+      color: #333;
+    }
+    .status {
+      padding: 10px;
+      background: #f0f0f0;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .status.active {
+      background: #d4edda;
+      color: #155724;
+    }
+    .toggle-container {
+      margin: 10px 0;
+    }
+    .toggle-switch {
+      position: relative;
+      display: inline-block;
+      width: 50px;
+      height: 24px;
+    }
+    .toggle-switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: .4s;
+      border-radius: 24px;
+    }
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      left: 3px;
+      bottom: 3px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
+    }
+    input:checked + .slider {
+      background-color: #2196F3;
+    }
+    input:checked + .slider:before {
+      transform: translateX(26px);
+    }
+    .site-toggle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <h2>Shorts & Stories Blocker</h2>
+  <div class="status active">
+    Extension is active
+  </div>
+  
+  <div class="site-toggle">
+    <span>Block YouTube Shorts</span>
+    <label class="toggle-switch">
+      <input type="checkbox" id="youtube-toggle" checked>
+      <span class="slider"></span>
+    </label>
+  </div>
+  
+  <div class="site-toggle">
+    <span>Block Facebook Stories</span>
+    <label class="toggle-switch">
+      <input type="checkbox" id="facebook-toggle" checked>
+      <span class="slider"></span>
+    </label>
+  </div>
+  
+  <p style="font-size: 12px; color: #666; margin-top: 15px;">
+    Changes take effect immediately.
+  </p>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

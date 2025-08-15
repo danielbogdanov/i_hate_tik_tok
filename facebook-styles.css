@@ -1,0 +1,16 @@
+/* facebook-styles.css */
+/* CSS will be dynamically toggled by JavaScript */
+body.block-facebook-stories [data-pagelet="Stories"],
+body.block-facebook-stories [role="region"][aria-label*="Stories"],
+body.block-facebook-stories [role="region"][aria-label*="Reels"],
+body.block-facebook-stories [aria-label*="Create story"],
+body.block-facebook-stories [aria-label*="Create a story"],
+body.block-facebook-stories [aria-label*="story preview"] {
+  display: none !important;
+}
+
+/* Hide story-related links */
+body.block-facebook-stories a[href*="/stories"],
+body.block-facebook-stories a[href*="/reel"] {
+  display: none !important;
+}
