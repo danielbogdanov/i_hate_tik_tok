@@ -2,6 +2,8 @@
 
 A browser extension that removes YouTube Shorts and Facebook Stories from your browsing experience, helping you stay focused and avoid distracting short-form content.
 
+![geezer-icon](geezer.png)
+
 ## Features
 
 - **YouTube Shorts Removal**: Hides all Shorts content including shelf sections, sidebar links, and individual Shorts videos
