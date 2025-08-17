@@ -46,10 +46,10 @@ The extension uses content scripts injected into YouTube and Facebook pages. Whe
 ├── youtube-styles.css     # YouTube hiding rules
 ├── facebook-blocker.js    # Facebook content script
 ├── facebook-styles.css    # Facebook hiding rules
-└── icons/                 # Extension icons
-    ├── icon16.png
-    ├── icon48.png
-    └── icon128.png
+├── icon16.png
+├── geezer.png
+├── icon48.png
+└── icon128.png
 ```
 
 ## Permissions
@@ -80,7 +80,7 @@ Contributions are welcome! Feel free to:
 
 ## License
 
-[Add your preferred license here]
+None. It's free and Open Source. What else do you want from me? Want to build a billion dollar ARR copmany off of this thing (Redis?) - go ahead!
 
 ## Support
 
